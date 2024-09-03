@@ -47,12 +47,12 @@ jobs:
     runs-on: macos
     steps:
       - name: Download OpenBeans.app.tgz
-        uses: actions/download-artifact@v1
+        uses: actions/download-artifact@v4.1.7
         with:
           name: z-internal-OpenBeans.app.tgz
           path: .
       - name: Download sign-macos.sh
-        uses: actions/download-artifact@v1
+        uses: actions/download-artifact@v4.1.7
         with:
           name: z-internal-sign-macos.sh
           path: .
@@ -74,7 +74,7 @@ jobs:
     runs-on: [windows-latest]
     steps:
       - name: Download OpenBeans-Windows.64bit.zip
-        uses: actions/download-artifact@v1
+        uses: actions/download-artifact@v4.1.7
         with:
           name: z-internal-OpenBeans-Windows.64bit.zip
           path: .
@@ -95,7 +95,7 @@ jobs:
     runs-on: [windows-latest]
     steps:
       - name: Download OpenBeans-Windows.32bit.zip
-        uses: actions/download-artifact@v1
+        uses: actions/download-artifact@v4.1.7
         with:
           name: z-internal-OpenBeans-Windows.32bit.zip
           path: .
